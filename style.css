@@ -1,0 +1,100 @@
+.logo{
+    max-width: 200px;
+}
+
+body{
+    background-color: #F7B953;
+    font-family: "Sansita", sans-serif;
+}
+
+main{
+    background-color: #eaeae8;
+}
+
+header{
+    background-color: #22376e;
+    text-align: center;
+}
+
+footer{
+    background-color: #22376e;
+    color: #eaeae8;
+    text-align: center;
+}
+
+h1{
+    font-size: 40px;
+    color: #e8442c;
+    text-align: center;
+}
+
+p{
+    font-size: 20px;
+}
+
+.menu1 a{
+    color: white;
+}
+
+
+.banner{
+    background-color: #dadad5;
+}
+
+.banner img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: 40% 0%;
+    
+}
+
+img{
+    border-radius: 10%;
+}
+
+div{
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+.texto_principal{
+    padding: 20px;
+}
+
+
+
+.texto_principal h2{
+    color: #e8442c;
+}
+
+.cards_cookies{
+    padding-bottom: 15px
+}
+
+.cards_cookies img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 80% 50%;
+}
+
+
+.cards_caixas{
+    padding-bottom: 15px
+}
+
+
+.cards_caixas img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.cards_fornada img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
