@@ -7,7 +7,7 @@
     <title>Casa Noronha Pães Artesanais</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sansita">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,33 +17,97 @@
 
         <img src="./imagens/logo.png" class="logo">
 
-        <nav class="nav menu1">
+        <nav class="nav justify-content-center menu1">
             <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">Sobre</a>
+            <a class="nav-link" href="#">Sobre Nós</a>
             <a class="nav-link" href="#">Cardápio</a>
             <a class="nav-link" href="#">Contatos</a>
-        </nav>        
+        </nav>
 
     </header>
 
 
     <main class="container">
-        <section class="row banner">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                <img src="./imagens/banner.jfif" class="banner">
+
+        <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselIndicators" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row banner">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <img src="./imagens/banner.jfif" alt="...">
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="texto_principal">
+                                <h2>Casa Noronha Pães</h2>
+                                <p>Somos uma micro padaria artesanal. Preparamos pães, doces e outros produtos de forma
+                                    artesanal. Fornadas toda quarta feira e sábado e encomendas na semana com horário
+                                    marcado.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row banner">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <img src="./imagens/banner2.jfif" alt="...">
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="texto_principal">
+                                <h2>Produtos originais com o melhor que a
+                                    cultura mineira tem a oferecer</h2>
+                                <p>Com suas raízes nos costumes mineiros,
+                                    a Casa Noronha produz deliciosos pães, bolos e biscoitos.
+                                    Tudo feito com ingredientes naturais, técnicas artesanais e muito carinho!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row banner">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <img src="./imagens/banner3.jfif" alt="...">
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="texto_principal">
+                                <h2>Horário de funcionamento</h2>
+                                <p>Feitos de maneira artesanal e com tempo para que tenhamos produtos mais saborosos e
+                                    saudáveis.
+                                    Por isso, temos um limite de produção e trabalhamos especialmente com encomendas e
+                                    com poucas opções para pronta entrega.
+                                </p>
+                                <p>
+                                    Segunda à sexta - 10h às 18h
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                <div class="texto_principal">
-                    <h2>Produtos originais com o melhor que a
-                        cultura mineira tem a oferecer</h2>
-                    <p>Com suas raízes nos costumes mineiros,
-                        a Casa Noronha produz deliciosos pães, bolos e biscoitos.
-                        Tudo feito com ingredientes naturais, técnicas artesanais e muito carinho!
-                    </p>
-                </div>
-            </div>
-        </section>
+            <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
 
         <h1>Nossos produtos</h1>
 
@@ -53,36 +117,84 @@
                 <h2>Cookies</h2>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
-                <img src="./imagens/cookie_cocada.jpg">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Cocada</h5>
+                        <img src="./imagens/cookie_cocada.jpg">
+                        <a href="#" class="btn btn-outline-primary btn-sm">Mais detalhes</a>
+                    </div>
+                </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
-                <img src="./imagens/cookie_castanha2.jpg">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Castanha do Pará</h5>
+                        <img src="./imagens/cookie_castanha2.jpg">
+                        <a href="#" class="btn btn-outline-primary btn-sm">Mais detalhes</a>
+                    </div>
+                </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
-                <img src="./imagens/cookie_triplo.jpg">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Triplo Chocolate</h5>
+                        <img src="./imagens/cookie_triplo.jpg">
+                        <a href="#" class="btn btn-outline-primary btn-sm">Mais detalhes</a>
+                    </div>
+                </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
-                <img src="./imagens/cookie_cafe.jfif">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Café com Doce de Leite</h5>
+                        <img src="./imagens/cookie_cafe.jfif">
+                        <a href="#" class="btn btn-outline-primary btn-sm">Mais detalhes</a>
+                    </div>
+                </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
-                <img src="./imagens/cookie_goiabada.jfif">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Goiabada</h5>
+                        <img src="./imagens/cookie_goiabada.jfif">
+                        <a href="#" class="btn btn-outline-primary btn-sm">Mais detalhes</a>
+                    </div>
+                </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
-                <img src="./imagens/cookie_flor.jfif">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Chocolate com Flor-de-Sal</h5>
+                        <img src="./imagens/cookie_flor.jfif">
+                        <a href="#" class="btn btn-outline-primary btn-sm">Mais detalhes</a>
+                    </div>
+                </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
-                <img src="./imagens/cookie_limao.jfif">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Limão com Chocolate Branco</h5>
+                        <img src="./imagens/cookie_limao.jfif">
+                        <a href="#" class="btn btn-outline-primary btn-sm">Mais detalhes</a>
+                    </div>
+                </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
-                <img src="./imagens/caixa_cookie.jfif">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Caixa de Cookies</h5>
+                        <img src="./imagens/caixa_cookie.jfif">
+                        <a href="#" class="btn btn-outline-primary btn-sm">Mais detalhes</a>
+                    </div>
+                </div>
             </div>
 
         </section>
@@ -94,15 +206,30 @@
             </div>
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                <img src="./imagens/cesta.jpg">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="./imagens/cesta.jpg">
+                        <a href="#" class="btn btn-outline-primary btn-sm">Mais detalhes</a>
+                    </div>
+                </div>
             </div>
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                <img src="./imagens/caixa_presente1.jfif">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="./imagens/caixa_presente1.jfif">
+                        <a href="#" class="btn btn-outline-primary btn-sm">Mais detalhes</a>
+                    </div>
+                </div>
             </div>
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                <img src="./imagens/caixa_presente2.jfif">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="./imagens/caixa_presente2.jfif">
+                        <a href="#" class="btn btn-outline-primary btn-sm">Mais detalhes</a>
+                    </div>
+                </div>
             </div>
 
         </section>
@@ -117,31 +244,104 @@
                 <p>Entre em contatos conosco para saber mais sobre as opções na fornada da semana*</p>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
-                <img src="./imagens/pao.jfif">
+            <div class="col-12 col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Pães de Longa Fermentação</h5>
+                        <img src="./imagens/pao.jfif">
+                        <p>Opções</p>
+                        <ul>
+                            <li>Pão com queijo canastra</li>
+                            <li>Pão semi integral multigrão</li>
+                            <li>Pão de Azeitonas</li>
+                            <li>Focaccia alecrim</li>
+                            <li>Foccacia de álho-poró</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Mais detalhes</a>
+                    </div>
+                </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
-                <img src="./imagens/bolo.jfif">
+            <div class="col-12 col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Bolos</h5>
+                        <img src="./imagens/bolo.jfif">
+                        <p>Opções</p>
+                        <ul>
+                            <li>Bolo de cenoura</li>
+                            <li>Bolo de banana</li>
+                            <li>Bolo de maçã com nozes, canela e coco</li>
+                            <li>Bolo de limão com pistache</li>
+                            <li>Bolo de chocolate</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Mais detalhes</a>
+                    </div>
+                </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
-                <img src="./imagens/biscoito_amanteigado.jfif">
+            <div class="col-12 col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Biscoitos</h5>
+                        <img src="./imagens/grissini.jfif">
+                        <p>Opções</p>
+                        <ul>
+                            <li>Grissini de gergelim</li>
+                            <li>Grissini de queijo</li>
+                            <li>Grissini de chocolate</li>
+                            <li>Biscoito amanteigados</li>
+                            <li>Biscoito de fubá com erva doce</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Mais detalhes</a>
+                    </div>
+                </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
-                <img src="./imagens/grissini.jfif">
+            <div class="col-12 col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Roscas</h5>
+                        <img src="./imagens/rosca2.jfif">
+                        <p>Opções</p>
+                        <ul>
+                            <li>Rosca de chocolate</li>
+                            <li>Rosca de doce de leite com coco</li>
+                            <li>Rosca de goiabada com chocolate branco</li>
+                            <li>Rosca de canela</li>
+                            <li>Rosca de Linguiça com chimichurri</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Mais detalhes</a>
+                    </div>
+                </div>
             </div>
 
         </section>
 
-        <section class="row sobre">
-            
-        </section>
 
-        
     </main>
 
+    <footer class="container footer">
+        <div class="row sobre">
+            <div class="col-12 col-sm-12 col-md-7 col-lg-7">
+                <h5>Sobre nós</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam minima harum ex, impedit rem quod
+                    fugit fugiat nobis necessitatibus praesentium tempora velit consequatur nihil quidem sequi
+                    repellendus a aspernatur amet? Ut expedita consectetur numquam, totam labore assumenda blanditiis
+                    nam unde. Quia quod ad temporibus voluptatem atque maxime veniam eius vero.</p>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-5 col-lg-5">
+                <h5>Redes Sociais</h5>
+                <ul class="social-network social-circle">
+                    <li><a href="https://www.facebook.com/casanoronhabh/" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://instagram.com/casanoronhabh?igshid=YmMyMTA2M2Y=" target="_blank" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://wa.me/c/553195775751" target="_blank" class="icoWhatsapp" title="WhatsApp"><i class="fa fa-whatsapp"></i></a></li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
 
     <footer class="container footer">
         <p>Casa Noronha Pães - Todos os direitos reservados 2022</p>

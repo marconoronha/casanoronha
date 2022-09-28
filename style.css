@@ -5,7 +5,9 @@
 body{
     background-color: #F7B953;
     font-family: "Sansita", sans-serif;
+    background-image: url("./imagens/logo.png");
 }
+
 
 main{
     background-color: #eaeae8;
@@ -19,7 +21,7 @@ header{
 footer{
     background-color: #22376e;
     color: #eaeae8;
-    text-align: center;
+    padding-top: 10px;
 }
 
 h1{
@@ -36,8 +38,8 @@ p{
     color: white;
 }
 
-
 .banner{
+    padding: 10px;
     background-color: #dadad5;
 }
 
@@ -49,52 +51,98 @@ p{
     
 }
 
-img{
-    border-radius: 10%;
+h5{
+    color: #e8442c;
+    font-size: 20px;
 }
 
-div{
-    padding-bottom: 10px;
-    padding-top: 10px;
-
-}
-
-.texto_principal{
-    padding: 20px;
+.btn-outline-primary{
+    margin-top: 10px;
+    color:#e8442c;
 }
 
 
+
+.btn-outline-primary:hover{
+    background-color: #e8442c;
+}
+
+.carousel-indicators li{
+    background-color: #e8442c;
+}
 
 .texto_principal h2{
     color: #e8442c;
 }
 
-.cards_cookies{
-    padding-bottom: 15px
-}
 
-.cards_cookies img{
+section div img{
     width: 100%;
     height: 300px;
     object-fit: cover;
     object-position: 80% 50%;
 }
 
+/*Social media icons*/
 
-.cards_caixas{
-    padding-bottom: 15px
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+	padding: 0;
+}
+ul.social-network li {
+	display: inline;
+	margin: 0 5px;
+}
+
+.social-network a.icoFacebook:hover {
+	background-color:#3B5998;
+}
+
+.social-network a.icoInstagram:hover {
+	background-color:#E1306C;
+}
+
+.social-network a.icoWhatsapp:hover {
+	background-color:#25d366;
 }
 
 
-.cards_caixas img{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+.social-network a.icoWhatsapp:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoInstagram:hover i{
+	color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+	color:#44BCDD;
 }
 
-.cards_fornada img{
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
+.social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 50px;
+	height: 50px;
+	font-size:20px;
+}
+.social-circle li i {
+	margin:0;
+	line-height:50px;
+	text-align: center;
 }
 
+.social-circle i {
+	color: #fff;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+.social-circle a {
+ background-color: #D3D3D3;   
+}
